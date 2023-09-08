@@ -22,8 +22,10 @@ function UserprofileDisplay() {
     <div>
       {users.map((user) => {
         return (
-        <h1>{user.full_name}</h1>
-        
+          <div>
+        <h1>{user.username}</h1>
+        <h3>{user.email}</h3>
+        </div>
         )
       })}
       <Link to="/userprofileadd">Add User</Link>
